@@ -1,0 +1,9 @@
+services:
+  dev_backend:
+    build:
+      context: ./backend
+      dockerfile: Dockerfile
+    image: dev_backend
+    container_name: dev_backend_container
+    ports:
+      - "8080:8080"
